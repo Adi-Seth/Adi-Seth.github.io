@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seth Pest Control Pvt Ltd</title>
-<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="icon" href="favicon.ico">
 
 <style>
 
@@ -12,130 +13,129 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f8f9fb;
-color:#222;
-line-height:1.6;
+background:#fafafa;
+color:#333;
 }
 
 header{
-background:white;
-border-bottom:1px solid #eee;
-padding:20px 10%;
+background:#b30000;
+color:white;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
 .logo{
-font-size:22px;
-font-weight:600;
-color:#1a1a1a;
+font-size:24px;
+font-weight:bold;
 }
 
 nav a{
-margin-left:25px;
+color:white;
 text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-nav a:hover{
-color:#c62828;
+margin-left:25px;
+font-size:15px;
 }
 
 .hero{
-padding:100px 10%;
-background:linear-gradient(120deg,#c62828,#ef5350);
+height:70vh;
+background:url("https://images.unsplash.com/photo-1581578731548-c64695cc6952") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 color:white;
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:20px;
+font-size:42px;
+background:rgba(0,0,0,0.5);
+padding:20px 30px;
+border-radius:6px;
 }
 
 .hero p{
-font-size:20px;
-max-width:600px;
-margin-bottom:30px;
+margin-top:10px;
+font-size:18px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 28px;
-background:white;
-color:#c62828;
-border-radius:8px;
+margin-top:20px;
+padding:12px 22px;
+background:#b30000;
+color:white;
 text-decoration:none;
-font-weight:600;
+border-radius:4px;
 }
 
-section{
-padding:80px 10%;
+.section{
+padding:70px 10%;
 }
 
-.section-title{
-font-size:32px;
+.section h2{
+text-align:center;
 margin-bottom:40px;
+font-size:32px;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .card{
 background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+padding:25px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 .card h3{
-margin-bottom:15px;
+margin-bottom:10px;
+color:#b30000;
 }
 
 .about{
-max-width:700px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:6px;
 }
 
 .contact{
-background:#c62828;
+background:#b30000;
 color:white;
-}
-
-.contact a{
-color:white;
+text-align:center;
+padding:60px 10%;
 }
 
 footer{
-text-align:center;
-padding:25px;
 background:#111;
 color:#aaa;
+text-align:center;
+padding:20px;
 font-size:14px;
 }
 
-@media(max-width:700px){
-
+@media(max-width:800px){
+.about{
+grid-template-columns:1fr;
+}
 .hero h1{
-font-size:34px;
+font-size:28px;
 }
-
-header{
-flex-direction:column;
-gap:10px;
-}
-
-nav a{
-margin:0 10px;
-}
-
 }
 
 </style>
@@ -144,95 +144,102 @@ margin:0 10px;
 <body>
 
 <header>
+
 <div class="logo">Seth Pest Control</div>
 
 <nav>
+<a href="#">Home</a>
 <a href="#services">Services</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-
 <section class="hero">
-<h1>Professional Pest Control Services</h1>
-<p>Reliable pest control solutions for homes and businesses. Safe, effective and trusted service from Seth Pest Control Pvt Ltd.</p>
 
-<a class="btn" href="#contact">Book Service</a>
+<div>
+
+<h1>Professional Pest Control Services</h1>
+
+<p>Termite | Cockroach | Rodent | Bed Bugs Control</p>
+
+<a class="btn" href="#contact">Get Free Inspection</a>
+
+</div>
+
 </section>
 
+<section class="section" id="services">
 
-<section id="services">
-<h2 class="section-title">Our Services</h2>
+<h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Termite Control</h3>
-<p>Complete termite inspection and treatment to protect your property.</p>
+<h3>Anti Termite Treatment</h3>
+<p>Complete termite protection for residential and commercial properties using modern chemical barriers.</p>
 </div>
 
 <div class="card">
 <h3>Cockroach Control</h3>
-<p>Advanced treatments that eliminate cockroach infestations effectively.</p>
+<p>Odourless gel treatment to eliminate cockroaches safely from kitchens, homes and offices.</p>
 </div>
 
 <div class="card">
 <h3>Rodent Control</h3>
-<p>Safe rodent removal and prevention for homes and commercial spaces.</p>
+<p>Advanced baiting and trapping solutions to remove rats and mice from your property.</p>
 </div>
 
 <div class="card">
-<h3>Mosquito Control</h3>
-<p>Reduce mosquito populations and protect your family.</p>
+<h3>Bed Bug Treatment</h3>
+<p>Effective multi-stage treatment to completely remove bed bug infestations.</p>
 </div>
 
 </div>
+
 </section>
 
-
-<section id="about">
-<h2 class="section-title">About Us</h2>
+<section class="section" id="about">
 
 <div class="about">
+
+<div>
+<h2>About Seth Pest Control</h2>
 <p>
-Seth Pest Control Pvt Ltd provides professional pest management services
-for residential and commercial properties. Our trained technicians use
-safe and effective treatment methods to ensure long-term pest prevention.
+Seth Pest Control Pvt Ltd provides professional pest management services using safe and modern techniques.
+Our experienced technicians help protect homes, offices, warehouses and restaurants from pest infestations.
 </p>
 
-<br>
-
 <p>
-We focus on reliability, safety, and customer satisfaction while using
-modern pest control solutions.
+We focus on long-term prevention, safe chemicals and reliable service.
 </p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1581578017426-7e6a9c3d71f8">
 
 </div>
-</section>
-
-
-<section id="contact" class="contact">
-
-<h2 class="section-title">Contact Us</h2>
-
-<p>Email: contact@sethpestcontrol.in</p>
-<p>Phone: +91 XXXXX XXXXX</p>
-<p>Location: Mumbai, India</p>
-
-<br>
-
-<p>Contact us today to schedule an inspection or pest control service.</p>
 
 </section>
 
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 Phone: +91 XXXXX XXXXX</p>
+
+<p>📧 Email: info@sethpestcontrol.in</p>
+
+<p>📍 Mumbai, Maharashtra</p>
+
+<a class="btn" href="#">Request Service</a>
+
+</section>
 
 <footer>
-© 2026 Seth Pest Control Pvt Ltd. All rights reserved.
-</footer>
 
-</body>
-</html>
+© 2026 Seth Pest Control Pvt Ltd — All Rights Reserved
+
 </footer>
 
 </body>
