@@ -1,88 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seth Pest Control | Pure. Protected. Peace.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seth Pest Control Pvt Ltd</title>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body{
+background:#f8f9fb;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:white;
+border-bottom:1px solid #eee;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#1a1a1a;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:#0284c7;
+}
+
+.hero{
+padding:100px 10%;
+background:linear-gradient(120deg,#38bdf8,#7dd3fc);
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:600px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:white;
+color:#0284c7;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.about{
+max-width:700px;
+}
+
+.contact{
+background:#38bdf8;
+color:white;
+}
+
+.contact a{
+color:white;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#111;
+color:#aaa;
+font-size:14px;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:34px;
+}
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+nav a{
+margin:0 10px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-    <nav class="glass-nav">
-        <div class="nav-content">
-            <a href="#" class="logo">Seth</a>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#about">Innovation</a>
-                <a href="#support">Support</a>
-                <a href="#contact" class="btn-sm">Get Started</a>
-            </div>
-        </div>
-    </nav>
+<header>
+<div class="logo">Seth Pest Control</div>
 
-    <section class="hero">
-        <div class="hero-text">
-            <p class="eyebrow">The new standard in safety.</p>
-            <h1>Pest control.<br><span class="gradient-text">Reimagined.</span></h1>
-            <p class="sub-headline">Advanced molecular barriers. Zero-residue technology. <br>Professionalism in every square inch.</p>
-            <div class="cta-group">
-                <a href="#contact" class="link-btn">Contact Sales ></a>
-                <a href="#services" class="link-btn">View Services ></a>
-            </div>
-        </div>
-        <div class="hero-image">
-            
-        </div>
-    </section>
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-    <section id="services" class="bento-section">
-        <div class="bento-grid">
-            <div class="bento-item large">
-                <div class="bento-content">
-                    <span>Precision</span>
-                    <h3>Termite Interception</h3>
-                    <p>Detecting threats before they reach your foundation.</p>
-                </div>
-            </div>
-            <div class="bento-item medium">
-                 <div class="bento-content">
-                    <span>Pure</span>
-                    <h3>Eco-Shield</h3>
-                    <p>Organic, pet-safe protection.</p>
-                </div>
-            </div>
-            <div class="bento-item small">
-                 <div class="bento-content">
-                    <i data-lucide="shield-check"></i>
-                    <h3>Verified</h3>
-                </div>
-            </div>
-             <div class="bento-item tall">
-                 <div class="bento-content">
-                    <span>24/7 Monitoring</span>
-                    <h3>Commercial Defense</h3>
-                    <p>For hotels, hospitals, and high-traffic spaces.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="feature-highlight">
-        <h2>Efficiency down to a science.</h2>
-        <p>Our proprietary 5-step process ensures a 99.9% elimination rate within the first 24 hours.</p>
-    </section>
+<section class="hero">
+<h1>Professional Pest Control Services</h1>
+<p>Reliable pest control solutions for homes and businesses. Safe, effective and trusted service from Seth Pest Control Pvt Ltd.</p>
 
-    <footer class="apple-footer">
-        <div class="footer-inner">
-            <p>Copyright © 2026 Seth Pest Control. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales Policy</a>
-            </div>
-        </div>
-    </footer>
+<a class="btn" href="#contact">Book Service</a>
+</section>
 
-    <script>lucide.createIcons();</script>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Anti - Termites Treatment</h3>
+<p>Eliminates termites & protects from future infestations.</p>
+</div>
+
+<div class="card">
+<h3>Wood Borer Worms Treatment</h3>
+<p>Targets wood-boring insects to safeguard wooden structures.</p>
+</div>
+
+<div class="card">
+<h3>Powder Post Beetles Treatment</h3>
+<p>Effective control over beetles to prevent further damage.</p>
+</div>
+
+<div class="card">
+<h3>Betel Nut Worms Treatment</h3>
+<p>Terminate worms which cause gradual decay of timber.</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+<p>
+Seth Pest Control Pvt Ltd provides professional pest management services
+for residential and commercial properties. Our trained technicians use
+safe and effective treatment methods to ensure long-term pest prevention.
+</p>
+
+<br>
+
+<p>
+We focus on reliability, safety, and customer satisfaction while using
+modern pest control solutions.
+</p>
+
+</div>
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>Email: ccmseth@rediffmail.com</p>
+<p>Phone: +91 982112####</p>
+<p>Location: Mumbai, India</p>
+
+<br>
+
+<p>Contact us to inquire about our pest control services.</p>
+
+</section>
+
+
+<footer>
+© 2026 Seth Pest Control Pvt Ltd. All rights reserved.
+</footer>
+
+</body>
+</html>
+</footer>
+
 </body>
 </html>
